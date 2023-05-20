@@ -1,0 +1,76 @@
+body {
+    padding: 20px;
+    /* background-color: #66666e; */
+    background-image: url('https://i.pinimg.com/236x/47/4e/51/474e512c35273437ff9a0ce098288974.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background-color: #00ff75;
+    border: 2px solid black;
+}
+
+p {
+    color: #000500;
+}
+
+.HB {
+    border: 2px solid black;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #6b705c;
+}
+
+.HB:hover {
+    transition: .3s ease;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #6b705c;
+}
+
+.box:hover {
+    transition: .5s ease;
+    border-radius: 50px;
+}
+
+.For-Button {
+    width: 9em;
+    height: 3em;
+    color: black;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #000000, -6px -6px 12px #ffffff;
+}
+
+.For-Button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #48cae4 50%, white 100%, #ef233c 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.For-Button:hover::before {
+    width: 9em;
+}
